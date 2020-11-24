@@ -17,7 +17,6 @@
 package v1.controllers.requestParsers.validators
 
 import v1.models.errors.MtdError
-import v1.models.requestData.RawData
 
 trait Validator[A <: RawData] {
 

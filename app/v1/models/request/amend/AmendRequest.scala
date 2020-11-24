@@ -14,12 +14,16 @@
  * limitations under the License.
  */
 
-package v1.models.request
+package v1.models.request.amend
 
-import uk.gov.hmrc.domain.Nino
-import v1.models.requestData.RawData
+import play.api.libs.json.{Json, Reads, Writes}
+import v1.models.request.PeriodDetails
 
-case class DeleteRawData(nino: String, submissionId: String) extends RawData
+case class AmendRequest(
+                         periodData: Seq[PeriodDetails]
+                       )
 
-case class DeleteRequestData(nino: Nino, submissionId: String)
-
+object AmendRequest {
+  implicit val reads: Reads[AmendRequest] = Json.reads[AmendRequest]
+  implicit val writes: Writes[AmendRequest] = Json.writes[AmendRequest]
+}

@@ -32,7 +32,8 @@ import v1.models.errors._
 import v1.models.hateoas.{HateoasWrapper, Link}
 import v1.models.hateoas.Method._
 import v1.models.outcomes.ResponseWrapper
-import v1.models.responseData.{CreateHateoasData, CreateResponseModel}
+import v1.models.request.create.{CreateRawData, CreateRequestData}
+import v1.models.response.{CreateHateoasData, CreateResponseModel}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future

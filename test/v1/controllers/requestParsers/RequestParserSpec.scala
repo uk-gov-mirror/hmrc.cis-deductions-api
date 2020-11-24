@@ -20,7 +20,6 @@ import support.UnitSpec
 import uk.gov.hmrc.domain.Nino
 import v1.controllers.requestParsers.validators.Validator
 import v1.models.errors.{BadRequestError, ErrorWrapper, NinoFormatError, RuleIncorrectOrEmptyBodyError}
-import v1.models.requestData.RawData
 
 class RequestParserSpec extends UnitSpec {
 

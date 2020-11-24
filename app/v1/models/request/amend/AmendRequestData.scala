@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-package v1.models.request
+package v1.models.request.amend
 
 import play.api.libs.json.JsValue
-import v1.models.requestData.RawData
 import uk.gov.hmrc.domain.Nino
 
 

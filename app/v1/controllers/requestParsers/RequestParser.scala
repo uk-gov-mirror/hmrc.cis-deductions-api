@@ -19,7 +19,6 @@ package v1.controllers.requestParsers
 import utils.Logging
 import v1.controllers.requestParsers.validators.Validator
 import v1.models.errors.{BadRequestError, ErrorWrapper}
-import v1.models.requestData.RawData
 
 trait RequestParser[Raw <: RawData, Request] extends Logging {
 

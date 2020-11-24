@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-package v1.models.request
+package v1.models.request.create
 
 import play.api.libs.json.JsValue
 import uk.gov.hmrc.domain.Nino
-import v1.models.requestData.RawData
 
 case class CreateRawData(nino: String, body: JsValue) extends RawData
 
